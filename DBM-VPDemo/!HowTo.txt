@@ -1,32 +1,32 @@
-Before we start, there're some tools you need to have.
+在开始之前，你需要准备一些工具。
 
-1. A decent text editor. (I use Notepad++ on Windows, Atom on Mac.)
-2. Voice recorder tools which can output ogg files. Could be some software or a physical recorder, as long as you can turn your voices to ogg.
+1. 一个不错的文本编辑器。（我在Windows上使用Notepad++，在Mac上使用Atom。）
+2. 可以输出ogg文件的录音工具。可以是某些软件或物理录音器，只要能把你的声音转成ogg格式文件即可。
 
-That's it. Easy, yeah?
+就是这样。很简单吧？
 
-Now the main part.
+现在进入主要部分。
 
-1. Copy the folder "DBM-VPDemo" from this pack into your workspace. By workspace I mean another folder location just in case you do something wrong and want to override the whole thing back to the initial status.
+1. 将这个包中的文件夹“DBM-VPDemo”复制到你的工作空间。这里的工作空间是指另一个文件夹位置，以防你做错了什么事并想将整个文件夹恢复到初始状态。
 
-2. Make a decision of what name you want to use for your voice pack, and rename the folder to "DBM-VPYourPackName". Must follow the start "DBM-VP", case sensitive.
+2. 决定你想用作你的语音包的名称，并将文件夹重命名为“DBM-VPYourPackName”。必须以“DBM-VP”开头，区分大小写。
 
-3. Go into the folder and rename the file "DBM-VPDemo.toc" to the same name you just named your folder, so "DBM-VPYourPackName.toc". DO NOT accidentally change the ext ".toc".
+3. 进入文件夹，并将文件“DBM-VPDemo.toc”重命名为你刚刚命名的文件夹名称，所以是“DBM-VPYourPackName.toc”。不要意外地改变扩展名“.toc”。
 
-4. Now open the toc file you renamed in step 3 with your text editor (Notepad++ in my case).
-  4.1) First 3 lines are addon version info. No need to touch them unless future wow big version releases.
-  4.2) Line 4 is the title of your voice pack which will be showed in wow addons list. So simply change "Voicepack Demo" to "Voicepack YourPackName".
-  4.3) Line 5 and 6 is Taiwanese and Chinese translations for the title. If you don't speak those languages just remove those 2 lines. Or if you're making for some other languages please add yours here.
-  4.4) "RequiredDeps", "DefaultState" DO NOT TOUCH.
-  4.5) Change "Author: Iceoven" to "Author: YourName".
-  4.6) "Version", usually start from 1.0 (or 0.1 if still in alpha/beta status) and increase while your voicepack evolves. (Note: if you release on Curse, please bump this number everytime you make a release so that Curse client is aware.)
-  4.7) "X-DBM-Voice", DO NOT TOUCH.
-  4.8) "X-DBM-Voice-Name" is the name that appears in /dbm options for selection.
-  4.9) "X-DBM-Voice-ShortName" should always match "YourPackName" after "DBM-VP". So in this example, it's the word "Demo" in "DBM-VPDemo".
-  4.10) "X-DBM-Voice-Version" Might change with DBM version if required. Please follow the value in this demo every time we update.
-  4.11) "X-DBM-Voice-HasCount" 1 means you have the "count" folder which has 1-11 .ogg files, otherwise 0.
-  done.
+4. 现在用你的文本编辑器（在我的情况下是Notepad++）打开第3步中重命名的toc文件。
+  4.1) 前3行是插件版本信息。除非未来有大的魔兽世界版本发布，否则不用动它们。
+  4.2) 第4行是你的语音包将在魔兽世界插件列表中显示的标题。所以简单地将“Voicepack Demo”改为“Voicepack YourPackName”。
+  4.3) 第5和第6行是标题的繁体中文和简体中文翻译。如果你不讲这些语言，可以删除这两行。或者如果你在为其他语言制作，请在这里添加对应语言。
+  4.4) “RequiredDeps”和“DefaultState”不要动。
+  4.5) 将“Author: Iceoven”改为“Author: YourName”。
+  4.6) “Version”，通常从1.0开始（如果仍在alpha/beta状态下则从0.1开始），并随着你的语音包的演变而增加。（注意：如果你在Curse上发布，每次发布时请增加这个数字，以便Curse客户端能够识别到更新。）
+  4.7) “X-DBM-Voice”，不要动。
+  4.8) “X-DBM-Voice-Name”是在/dbm选项中选择时显示的名称。
+  4.9) “X-DBM-Voice-ShortName”应始终与“DBM-VP”后的“YourPackName”匹配。所以在这个例子中，就是“DBM-VPDemo”中的“Demo”。
+  4.10) “X-DBM-Voice-Version”如果需要，可能会随DBM版本变化。每次我们更新时，请遵循这个示例中的值。
+  4.11) “X-DBM-Voice-HasCount”值为1表示你有包含1-11个.ogg文件的“count”文件夹，否则为0。
+  完成。
 
-5. Congrats, the only last thing left now is to record your ogg files. Open the !VoiceText.txt and you'll see the file names on the left and the words we used on the right.
-  5.1) You may search through and find the ones you want to customize or simply record all of them and replace the existing ones.
-  5.2) Advance usage: If you know Lua and addon development, you can just go into each DBM module and find those places where the voice file is called and understand better when it's triggered.
+5. 恭喜，现在唯一剩下的就是录制你的ogg文件。打开“!VoiceText.txt”，你会看到左边是文件名，右边是我们使用的词语。
+  5.1) 你可以搜索并找到你想自定义的部分，或简单地录制所有内容并替换现有的文件。
+  5.2) 高级用法：如果你懂Lua和插件开发，你可以进入每个DBM模块，找到调用语音文件的地方，并更好地理解其触发时机。
