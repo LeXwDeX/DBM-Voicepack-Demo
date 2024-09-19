@@ -1,44 +1,44 @@
-[![Build Status](https://github.com/DeadlyBossMods/DBM-MoP/workflows/CI/badge.svg)](https://github.com/DeadlyBossMods/DBM-MoP/actions?workflow=CI)
-[![DeadlyBossMods on Discord](https://img.shields.io/badge/discord-DeadlyBossMods-738bd7.svg?style=flat)](https://discord.gg/DeadlyBossMods) 
+[![构建状态](https://github.com/DeadlyBossMods/DBM-MoP/workflows/CI/badge.svg)](https://github.com/DeadlyBossMods/DBM-MoP/actions?workflow=CI)
+[![DeadlyBossMods 在 Discord 上](https://img.shields.io/badge/discord-DeadlyBossMods-738bd7.svg?style=flat)](https://discord.gg/DeadlyBossMods) 
 
 <p><img src="http://mysticalos.com/images/DBM/support_on_patreon.png" width="408" height="80" /></p>
 <p><a href="https://www.patreon.com/deadlybossmods">https://www.patreon.com/deadlybossmods</a></p>
 
-Deadly Boss Mods: Voice Pack Demo
-=================================
+Deadly Boss Mods: 语音包演示
+============================
 
-Requirements
-------------
-Before we start, there're some tools you need to have.
+需求
+----
+在我们开始之前，你需要准备一些工具。
 
-1. A decent text editor. (I use Notepad++ on Windows, Atom on Mac.)
-2. Voice recorder tools which can output ogg files. Could be some software or a physical recorder, as long as you can turn your voices to ogg.
+1. 一个合适的文本编辑器。（我在 Windows 上使用 Notepad++，在 Mac 上使用 Atom。）
+2. 可以输出 ogg 文件的录音工具。可以是某些软件或物理录音设备，只要你能将你的声音转换为 ogg 格式即可。
 
-That's it. Easy, yeah?
+就是这样。简单吧？
 
-How to create a voice pack
---------------------------
+如何创建语音包
+---------------
 
-1. Copy the folder "DBM-VPDemo" from this pack into your workspace. By workspace I mean another folder location just in case you do something wrong and want to override the whole thing back to the initial status.
+1. 将此包中的“DBM-VPDemo”文件夹复制到你的工作区。工作区是指另一个文件夹位置，以防你做错了什么事然后想要将整个东西恢复到初始状态。
 
-2. Make a decision of what name you want to use for your voice pack, and rename the folder to "DBM-VPYourPackName". It must start with "DBM-VP", case sensitive.
+2. 决定你想要使用的语音包名称，并将文件夹重命名为“DBM-VPYourPackName”。它必须以“DBM-VP”开头，区分大小写。
 
-3. Go into the folder and rename the file "DBM-VPDemo.toc" to the same name you just named your folder, so "DBM-VPYourPackName.toc". DO NOT accidentally change the extension ".toc".
+3. 进入文件夹并将文件“DBM-VPDemo.toc”重命名为与你刚才命名的文件夹相同的名称，所以应该为“DBM-VPYourPackName.toc”。不要意外地更改扩展名“.toc”。
 
-4. Now open the toc file you renamed in step 3 with your text editor.
-    1. First 3 lines are addon version info. No need to touch them unless future wow big version releases.
-    2. Line 3 is the title of your voice pack which will be showed in wow addons list. So simply change "Voicepack Demo" to "Voicepack YourPackName".
-    3. Line 4 and 5 is Taiwanese and Chinese translations for the title. If you don't speak those languages just remove those 2 lines. Or if you're making for some other languages please add yours here.
-    4. "RequiredDeps", "DefaultState" DO NOT TOUCH.
-    5. Change "Author: Iceoven" to "Author: YourName".
-    6. "Version", usually start from 1.0 (or 0.1 if still in alpha/beta status) and increase while your voicepack evolves. (Note: if you release on Curse, please bump this number everytime you make a release so that Curse client is aware.)
-    7. "X-DBM-Voice", DO NOT TOUCH.
-    8. "X-DBM-Voice-Name" is the name that appears in /dbm options for selection.
-    9. "X-DBM-Voice-ShortName" should always match "YourPackName" after "DBM-VP". So in this example, it's the word "Demo" in "DBM-VPDemo".
-    10. "X-DBM-Voice-Version" Might change with DBM version if required. Please follow the value in this demo every time we update.
-    11. "X-DBM-Voice-HasCount" 1 means you have the "count" folder which has 1-11 .ogg files, otherwise 0.
-  done.
+4. 现在用文本编辑器打开你在步骤3中重命名的 toc 文件。
+    1. 前三行是插件版本信息。除非未来魔兽世界大版本发布，否则无需修改它们。
+    2. 第3行是你的语音包标题，将显示在魔兽世界插件列表中。所以只需将“Voicepack Demo”更改为“Voicepack YourPackName”。
+    3. 第4和5行是标题的台湾和中文翻译。如果你不讲这些语言，直接删除这两行。或者如果你正在为其他语言制作，请在此添加你的语言。
+    4. “RequiredDeps”，“DefaultState”不要修改。
+    5. 将“Author: Iceoven”更改为“Author: YourName”。
+    6. “Version”，通常从1.0开始（如果仍在alpha/beta状态则为0.1），并随着语音包的发展而增加。（注意：如果你在 Curse 发布，每次发布时请提高此数字，以便 Curse 客户端知道。）
+    7. “X-DBM-Voice”不要修改。
+    8. “X-DBM-Voice-Name”是在/dbm选项中显示的名字。
+    9. “X-DBM-Voice-ShortName”应始终与“DBM-VP”之后的“YourPackName”匹配。所以在这个例子中，它是“DBM-VPDemo”中的“Demo”。
+    10. “X-DBM-Voice-Version”如果需要，可能会随 DBM 版本更改。每次更新时请按照此示例中的值进行操作。
+    11. “X-DBM-Voice-HasCount” 1 表示你有一个包含1-11个 .ogg 文件的“count”文件夹，否则为 0。
+        完成。
 
-5. Congrats, the only last thing left now is to record your ogg files. See [here](https://github.com/DeadlyBossMods/DBM-Voicepack-Demo/blob/master/DBM-VPDemo/!VoiceText.txt) for a list of the file names on the left and the words we used on the right.
-    1. You may search through and find the ones you want to customize or simply record all of them and replace the existing ones.
-    2. Advance usage: If you know Lua and addon development, you can just go into each DBM module and find those places where the voice file is called and understand better when it's triggered.
+5. 恭喜，现在唯一剩下的就是录制你的 ogg 文件。参见[此处](https://github.com/DeadlyBossMods/DBM-Voicepack-Demo/blob/master/DBM-VPDemo/!VoiceText.txt)了解文件名和我们使用的词语列表。
+    1. 你可以搜索并找到你想要自定义的文件，或者简单地录制所有文件并替换现有文件。
+    2. 进阶用法：如果你了解 Lua 和插件开发，你可以进入每个 DBM 模块并找到调用语音文件的位置，从而更好地理解它何时被触发。
